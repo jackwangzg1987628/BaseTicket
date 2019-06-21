@@ -1,0 +1,50 @@
+﻿软件安装
+Open JDK 
+yum install java-1.8.0-openjdk
+
+myql
+https://blog.csdn.net/buyaopingbixiazai/article/details/81382374
+
+Docker:
+yum install docker
+systemctl start docker
+systemctl enable docker
+redis 
+docker run -p 6379:6379 -d redis redis-server
+mongodb
+docker run -p 27017:27017 -d mongo
+memcached
+
+docker run -p 11211:11211 --name my-memcache -d memcached memcached -m 512
+
+Svn
+Yum install svn
+svn checkout http://39.105.50.43:18080/svn/ticketnew /root/apps/travelapps --username zhourz
+
+Maven :
+Yum install maven
+
+Nginx
+安装新 库，否则是1.12 版本
+rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+
+yum info nginx
+
+yum install nginx
+
+systemctl start nginx.service
+systemctl enable nginx.service
+nginx -s reload 
+
+
+/Users/yhxtpros/javatravel/techbase/webresources/src/main/resources/static
+
+scp /Users/yhxtpros/javatravel/thirdpart/xxl-job-admin/target/xxl-job-admin-2.0.2-SNAPSHOT.jar root@159.138.58.177:/root/apps/
+
+scp /Users/yhxtpros/javatravel/travel/startxxljob.sh root@159.138.58.177:/root/apps/
+
+/Users/yhxtpros/javatravel/travel/src/startxxljob.sh
+
+http://39.105.50.43:18080/svn/ble
+
+svn checkout http://39.105.50.43:18080/svn/ble /usr/share/nginx/html --username zhourz
